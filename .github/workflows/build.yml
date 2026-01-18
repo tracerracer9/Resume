@@ -1,0 +1,38 @@
+name: Build Resume
+
+on:
+  push:
+    paths:
+      - 'resume.tex'
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install tectonic
+        uses: wtfjoke/setup-tectonic@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install poppler-utils
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      - name: Compile LaTeX to PDF
+        run: tectonic resume.tex
+
+      - name: Convert PDF to PNG
+        run: pdftoppm -png -r 300 -singlefile resume.pdf resume
+
+      - name: Commit and push artifacts
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add resume.pdf resume.png
+          git diff --staged --quiet || git commit -m "Build resume artifacts [skip ci]"
+          git push
