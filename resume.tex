@@ -18,20 +18,6 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\input{glyphtounicode}
-
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -56,9 +42,6 @@
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
 
 %-------------------------
 % Custom commands
@@ -132,42 +115,37 @@
       {Software Engineer - Backend}{May 2021 -- Present}
       {Coinbase}{New York, NY}
       \resumeItemListStart
-        \resumeItem{Developing new notification infrastructure to support SMS, Email, Push, In-App, etc.}
-        \resumeItem{Onboarding flow and Beta Experience for NFT website launch - nft.coinbase.com}
-        \resumeItem{Internal tools for non-developers that increased productivity}
+        \resumeItem{Architected notification infrastructure supporting SMS, Email, Push, and In-App delivery channels}
+        \resumeItem{Built onboarding flow and beta experience for NFT marketplace launch (nft.coinbase.com)}
+        \resumeItem{Developed internal tools for non-technical teams, improving operational productivity}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Software Engineer}{November 2019 -- Present}
+      {Software Engineer}{Nov. 2019 -- May 2021}
       {Intelligent Retail Lab}{Remote/Hoboken, NJ}
       \resumeItemListStart
-        \resumeItem{Worked on machine learning pipelines that delivered key metrics, leading to an eventual acquisition by Walmart}
-        \resumeItem{Developed services to assist with serving visualized and human-readable machine-learning model results}
-        \resumeItem{Created backend services and managed them with monitoring, scaling, and alerting}
+        \resumeItem{Built machine learning pipelines delivering key business metrics, contributing to acquisition by Walmart}
+        \resumeItem{Developed services for visualizing and presenting ML model results in human-readable formats}
+        \resumeItem{Created and maintained backend services with comprehensive monitoring, scaling, and alerting}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Software Engineer}{June 2018 -- November 2019}
+      {Software Engineer}{June 2018 -- Nov. 2019}
       {Quantum Circuits}{New Haven, CT}
       \resumeItemListStart
-        \resumeItem{Joined the company as the first software engineer and helped build software that was essential to funding
-goals (Sequoia Capital)}
-        \resumeItem{Collaborated extensively with non-software engineers to understand the requirements of the company's
-unique complex systems and designed and built core infrastructure}
-        \resumeItem{Implemented highly parallel low-level code that required extremely high precision execution}
-        \resumeItem{Laid out foundations for development workflows and pipelines for many of the tools now in use at the
-company}
+        \resumeItem{Joined as first software engineer; built software critical to securing Series B funding (Sequoia Capital)}
+        \resumeItem{Collaborated with physicists and engineers to design core infrastructure for complex quantum systems}
+        \resumeItem{Implemented highly parallel, low-latency code requiring precise timing execution}
+        \resumeItem{Established development workflows and CI/CD pipelines adopted across the engineering organization}
     \resumeItemListEnd
 
     \resumeSubheading
       {Software Engineer}{June 2017 -- June 2018}
       {IBM}{Rochester, MN}
       \resumeItemListStart
-        \resumeItem{Built, maintained, and suggested improvements for a tool that generated Terraform templates (technology
-that deploys and tracks the lifecycle of a cloud deployment) used for enterprise middleware software}
-        \resumeItem{Updated “infrastructure as code” files for cloud deployments to keep up with best practices and version
-changes}
-        \resumeItem{Tested and debugged deployments of cloud infrastructure}
+        \resumeItem{Built and maintained Terraform template generator for enterprise middleware cloud deployments}
+        \resumeItem{Updated infrastructure-as-code configurations to align with evolving best practices}
+        \resumeItem{Tested and debugged cloud infrastructure deployments}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -179,25 +157,25 @@ changes}
       \resumeProjectHeading
           {\textbf{PyZTrending}}{Aug. 2020 -- Present}
           \resumeItemListStart
-            \resumeItem{Developed Python library that is able to determine arbitrary trending data given a historical dataset}
+            \resumeItem{Developed Python library for detecting trending patterns in arbitrary historical datasets}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Plainview}}{Jan. 2017 -- June 2017}
           \resumeItemListStart
             \resumeItem{Received grant from CUNY Startups on project involving archival of web content}
             \resumeItem{Designed and implemented the full stack for the web application}
-            \resumeItem{Was able to scrape, analyze, and monitor future changes for news content for dozens of different online publications}
+            \resumeItem{Built scrapers to analyze and monitor content changes across dozens of online news publications}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 
-
-%
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Tools}{: Python, Golang, AWS} \\
+     \textbf{Languages}{: Python, Go, SQL} \\
+     \textbf{Infrastructure}{: AWS, Terraform, Docker} \\
+     \textbf{Tools}{: Git, CI/CD, Monitoring \& Alerting Systems}
     }}
  \end{itemize}
 
