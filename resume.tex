@@ -10,9 +10,7 @@
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
@@ -59,22 +57,6 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
@@ -82,28 +64,21 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
 
-%----------HEADING----------
-
 \begin{center}
-    \textbf{\Huge \scshape Daniel Balagula} \\ \vspace{1pt}
-    \small 201-527-0709 $|$ \href{mailto:danielbalagula@pm.me}{\underline{danielbalagula@pm.me}} $|$ 
+    \textbf{\Huge \scshape Daniel Balagula} \\ \vspace{4pt}
+    \small Senior Software Engineer $|$ Backend $|$ Distributed Systems \\ \vspace{4pt}
+    \small 201-527-0709 $|$ \href{mailto:danielbalagula@pm.me}{\underline{danielbalagula@pm.me}} $|$
     \href{https://linkedin.com/in/dbalagula}{\underline{linkedin.com/in/dbalagula/}} $|$
     \href{https://github.com/dbalagula}{\underline{github.com/dbalagula}}
 \end{center}
 
-
-%-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Software Engineer - Backend}{May 2021 -- Present}
+      {Software Engineer - Backend}{May 2021 -- Nov. 2022}
       {Coinbase}{New York, NY}
       \resumeItemListStart
         \resumeItem{Architected notification infrastructure supporting SMS, Email, Push, and In-App delivery channels}
@@ -141,19 +116,16 @@
 
   \resumeSubHeadingListEnd
 
-
-%-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, Go, SQL} \\
-     \textbf{Infrastructure}{: AWS, Terraform, Docker} \\
-     \textbf{Tools}{: Git, CI/CD, Monitoring \& Alerting Systems}
+     \textbf{Languages}{: Python, Go, Java, SQL} \\
+     \textbf{Data}{: PostgreSQL, BigQuery, Kafka} \\
+     \textbf{Infrastructure}{: Cloud Platforms, Kubernetes, Docker} \\
+     \textbf{AI/ML}{: LLM Prompting}
     }}
  \end{itemize}
 
-
-%-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
@@ -161,5 +133,4 @@
       {Bachelor of Arts in Computer Science}{Aug. 2013 -- May 2017}
   \resumeSubHeadingListEnd
 
-%-------------------------------------------
 \end{document}
